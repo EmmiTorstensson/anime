@@ -1,3 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans|Noto+Serif+JP:300,400&display=swap");
+
+.section-6 {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 160px 30%;
+  height: 400px;
+}
+
+.section-6-text {
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.sectionVisible {
+  opacity: 1;
+}
+
+.top-line {
+  background-color: #000;
+  width: 1px;
+  height: 3rem;
+  opacity: 0.3;
+  margin: 0px auto 40px;
+}
+
+.section-7 {
+  display: flex;
+  color: #fff;
+  min-height: 450px;
+  height: auto;
+  margin-top: -60px;
+  margin-bottom: 50px;
+}
+
+.section-7 a {
+  color: #fff;
+}
+
+.left7,
+.right7 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.right7 {
+  padding-left: 3%;
+}
+
+.left7-text,
+.right7-text {
+  background-color: #2f3648;
+  height: 85%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.left7-img,
+.right7-img {
+  width: 40%;
+}
+
+.left7-text *,
+.right7-text * {
+  text-align: center;
+  margin: 0px 35px;
+}
+
+.left7-img img,
+.right7-img img {
+  width: 100%;
+  height: auto;
+}
+
+.imgAni {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.5s;
+}
+
+.imgVisible {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+h2,
+h3,
+.p-small,
+a {
+  font-family: "Alegreya Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 39px;
+  font-weight: normal;
+}
+
+.p-info {
+  font-size: 14.8px;
+  font-family: "Noto Serif JP", serif;
+}
+
+.p-small2 {
+  font-size: 11px;
+}
+
+a {
+  font-size: 11px;
+}
+
+h3 {
+  font-size: 31.5px;
+  font-weight: normal;
+}
+
+.swiper-container {
+  width: 800px;
+  height: 550px;
+}
+
+.swiper-slide {
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 29%;
+}
+
+.one {
+  background-image: url(./images/carousel1.jpg);
+}
+
+.two {
+  background-image: url(./images/carousel2.jpg);
+}
+
+.three {
+  background-image: url(./images/carousel3.jpg);
+}
+.four {
+  background-image: url(./images/carousel4.jpg);
+}
+.five {
+  background-image: url(./images/carousel5.jpg);
+}
+
+.swiper-pagination-bullet {
+  width: 76px;
+  height: 2px;
+  display: inline-block;
+  border-radius: 0px;
+  margin: 70px 0px 0px 10px;
+}
+
+.swiper-pagination {
+  text-align: left;
+  bottom: -1250px;
+  left: 15.5%;
+}
+
+.section-8 {
+  padding: 90px 0px 200px;
+  display: flex;
+  background-color: #f8f8f8;
+}
+
+.side-text {
+  width: 17%;
+  margin-top: 50px;
+  height: 10%;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-family: "Alegreya Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.swiper-container {
+  width: 90%;
+  cursor: url("./images/cursor.svg"), auto !important;
+}
+
+.swiper-container a {
+  cursor: url("./images/cursor.svg"), auto !important;
+}
+
+.section-6 p,
+.section-7 p,
+.section-8 p {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+=======
 body {
   margin: 0;
   padding: 0;
