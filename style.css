@@ -3,7 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
 .section-4,
 .section-5 {
   display: flex;
@@ -11,7 +10,7 @@ body {
   height: 85vh;
 }
 
-.image-wrapper-one{
+.image-wrapper-one {
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -105,7 +104,7 @@ body {
 .section-5 .text-wrapper a {
   color: #000;
 }
-.image-wrapper-two{
+.image-wrapper-two {
   width: 40%;
 }
 .image-one {
@@ -134,13 +133,13 @@ body {
   font-weight: 400;
 }
 .image-one-text p,
-.image-two-text p{
+.image-two-text p {
   margin-top: 5px;
-letter-spacing: 0.25em;
-text-transform: uppercase;
-font-size: 0.68rem;
-color: #fff;
-text-align: center;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  color: #fff;
+  text-align: center;
 }
 
 .font-lebeaune {
