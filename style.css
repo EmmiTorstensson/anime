@@ -126,6 +126,8 @@ body {
 }
 
 .section-1-text-wrapper h1{
+  margin: 0;
+  padding: 0;
   color: #fff;
   text-transform: uppercase;
   text-align: center;
