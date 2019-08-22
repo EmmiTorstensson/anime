@@ -121,6 +121,7 @@ h3 {
 .swiper-container {
   width: 800px;
   height: 550px;
+  display: flex !important;
 }
 
 .swiper-slide {
@@ -163,8 +164,9 @@ h3 {
 
 .swiper-pagination {
   text-align: left;
-  bottom: -1250px;
   left: 15.5%;
+  align-self: flex-end;
+  margin-top: 5%;
 }
 
 .section-8 {
