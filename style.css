@@ -201,6 +201,7 @@ h3 {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -356,21 +357,21 @@ body {
 }
 /* EMMI CSS */
 
-.section-1{
+.section-1 {
   height: 100vh;
   overflow: hidden;
 }
 
-.section-1-img-wrapper{
+.section-1-img-wrapper {
   height: 100vh;
-  background: url('img/school.jpg');
+  background: url("img/school.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
 }
 
-.section-1-text-wrapper{
+.section-1-text-wrapper {
   position: absolute;
   text-align: center;
   top: 50%;
@@ -378,7 +379,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.section-1-text-wrapper h1{
+.section-1-text-wrapper h1 {
   margin: 0;
   padding: 0;
   color: #fff;
@@ -388,5 +389,4 @@ body {
   font-size: 5rem;
   font-weight: lighter;
   letter-spacing: 0.1em;
-
 }
