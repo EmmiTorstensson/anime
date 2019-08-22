@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans|Noto+Serif+JP:300,400&display=swap");
+
+.section-6 {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 160px 30%;
+  height: 400px;
+}
+
+.section-6-text {
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.sectionVisible {
+  opacity: 1;
+}
+
+.section-7 {
+  display: flex;
+  color: #fff;
+  min-height: 450px;
+  height: auto;
+  margin-top: -60px;
+}
+
+.section-7 a {
+  color: #fff;
+}
+
+.left7,
+.right7 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.right7 {
+  padding-left: 3%;
+}
+
+.left7-text,
+.right7-text {
+  background-color: #2f3648;
+  height: 85%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.left7-img,
+.right7-img {
+  width: 40%;
+}
+
+.left7-text *,
+.right7-text * {
+  text-align: center;
+  margin: 0px 35px;
+}
+
+.left7-img img,
+.right7-img img {
+  width: 100%;
+  height: auto;
+}
+
+.imgAni {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.5s;
+}
+
+.imgVisible {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+h2,
+h3,
+.p-small,
+a {
+  font-family: "Alegreya Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 39px;
+  font-weight: normal;
+}
+
+.p-info {
+  font-size: 14.8px;
+  font-family: "Noto Serif JP", serif;
+}
+
+a {
+  font-size: 11px;
+}
+
+h3 {
+  font-size: 31.5px;
+  font-weight: normal;
+}
