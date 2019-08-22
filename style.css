@@ -145,10 +145,45 @@ body {
 .font-lebeaune {
   font-family: lebeaune, serif;
 }
-
 .font-calluna {
   font-family: calluna, serif;
 }
 .font-caslons {
   font-family: caslons-egyptian, sans-serif;
+
+/* EMMI CSS */
+
+.section-1{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section-1-img-wrapper{
+  height: 100vh;
+  background: url('img/school.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.section-1-text-wrapper{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-1-text-wrapper h1{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 1000;
+  font-size: 5rem;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+
 }
