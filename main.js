@@ -12,24 +12,19 @@ const myAnimation = anime({
 })
 
 const myTextAnimation = anime({
-    targets: '.section-1-text-1',
+    targets: '.section-1-text .section-1-word',
     translateY: [50,0],
     translateZ: 0,
     opacity: [0,1],
     easing: "easeOutExpo",
     duration: 8000,
     delay: function(el, i) {
-      return 300 + 30 * i}
-})
-
-const myTextAnimation2 = anime({
-    targets: '.section-1-text-2',
-    translateY: [50,0],
-    translateZ: 0,
-    opacity: [0,1],
+        return 700*i;}
+}).add({
+    targets: '.section-1-text',
+    opacity: 0,
+    duration: 1000,
     easing: "easeOutExpo",
-    duration: 8000,
-    delay: 5000,
-    delay: function(el, i) {
-      return 300 + 30 * i}
+    delay: 1000
+ 
 })
