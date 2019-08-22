@@ -17,13 +17,11 @@ function checkForVisibility() {
 
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
+  let middle = rect.top + (rect.bottom - rect.top) / 2;
 
   return (
     rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    middle <= (window.innerHeight || document.documentElement.clientHeight)
   );
 }
 
@@ -32,3 +30,41 @@ if (window.addEventListener) {
   addEventListener("load", checkForVisibility, false);
   addEventListener("scroll", checkForVisibility, false);
 }
+
+//Slider carousel
+
+var mySwiper = new Swiper(".swiper-container", {
+  //   speed: 400,
+  //   spaceBetween: 100,
+  initialSlide: 0,
+  //truewrapper adoptsheight of active slide
+  autoHeight: false,
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  // delay between transitions in ms
+  autoplay: false,
+  //   autoplayStopOnLast: false, // loop false also
+  // If we need pagination
+  pagination: ".swiper-pagination",
+  //   paginationType: "bullets",
+
+  //   // Navigation arrows
+  //   nextButton: ".swiper-button-next",
+  //   prevButton: ".swiper-button-prev",
+
+  // And if we need scrollbar
+  //scrollbar: '.swiper-scrollbar',
+  // "slide", "fade", "cube", "coverflow" or "flip"
+  effect: "slide",
+  // Distance between slides in px.
+  spaceBetween: 70,
+  //
+  slidesPerView: 3,
+  //
+  centeredSlides: false,
+  //
+  slidesOffsetBefore: 0,
+  //
+  grabCursor: true
+});
