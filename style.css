@@ -303,6 +303,10 @@ body {
   color: #000;
   opacity: 0.5;
 }
+
+.font-caslons {
+    font-family: caslons-egyptian,sans-serif
+
 .section-5 .text-wrapper h2,
 .section-5 .text-wrapper p:last-of-type,
 .section-5 .text-wrapper a {
@@ -344,6 +348,7 @@ body {
   font-size: 0.68rem;
   color: #fff;
   text-align: center;
+
 }
 
 .font-lebeaune {
@@ -361,6 +366,43 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+
+.section-1 h3{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 0.5rem;
+  font-family: 'Cinzel', serif;
+}
+
+.section-1-menu-wrap{
+  z-index: 3000;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 150px;
+}
+.section-1-menu{
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 10px 0;
+}
+
+.section-1-menu-text{
+  color: #fff;
+  text-transform: uppercase;
+  top: 20%; 
+  position: absolute;
+  z-index: 3000;
+  top: 20%;
+  right: 26%;
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 0.8rem;
+}
+
+.section-1-img-wrapper{
 
 .section-1-img-wrapper {
   height: 100vh;
@@ -387,6 +429,42 @@ body {
   text-align: center;
   z-index: 1000;
   font-size: 5rem;
-  font-weight: lighter;
   letter-spacing: 0.1em;
+  font-family: 'Cinzel', serif;;
 }
+
+.section-1-line-top, .section-1-line-bottom{
+    width: 2px;
+    height: 3rem;
+    background-color: #fff;
+    z-index: 1000;
+    margin: 0 auto;
+
+}
+
+.section-1-link{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 0.8rem;
+}
+
+.section-1 a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  }
+
+  .section-1 a:hover:after { 
+    width: 100%; 
+    transition: width .3s;
+  }
