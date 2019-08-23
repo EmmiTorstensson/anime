@@ -1,3 +1,37 @@
+
+//alex
+function checkForVisibility() {
+    var headers = document.querySelectorAll(".delay");
+    headers.forEach(function(header) {
+
+        
+      if (isElementInViewport(header)) {
+       return header.classList.add("delay--enter");
+        
+    }
+       
+    });
+  }
+  
+  function isElementInViewport (el) {
+    var rect = el.getBoundingClientRect();
+  
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
+    );
+  }
+  
+  if (window.addEventListener) {
+    addEventListener('DOMContentLoaded', checkForVisibility, false); 
+    addEventListener('load', checkForVisibility, false);
+    addEventListener('scroll', checkForVisibility, false);
+  }
+
+//alexends
+
 let s4 = anime.timeline({
   easing: "linear",
   duration: 500
@@ -123,25 +157,33 @@ var mySwiper = new Swiper(".swiper-container", {
 /* Emmi JS*/
 
 const myAnimation = anime({
-  targets: ".section-1-img",
-  scale: 1.2,
-  duration: 16000,
-  delay: function(el, i) {
-    return i * 250;
-  },
-  direction: "alternate",
-  easing: "linear",
-  loop: true
-});
+    targets: '.section-1-img',
+    scale: 1.2,
+    duration: 16000,
+    direction: 'alternate',
+    easing: 'linear',
+    loop: true,
+})
 
 const myTextAnimation = anime({
-  targets: ".section-1-text-wrapper .section-1-word",
-  translateY: [50, 0],
-  translateZ: 0,
-  opacity: [0, 1],
-  easing: "easeOutExpo",
-  duration: 8000,
-  delay: function(el, i) {
-    return 700 * i;
-  }
-});
+    targets: '.section-1-text .section-1-word',
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 8000,
+    delay: function(el, i) {
+        return 700*i;}
+})  
+
+
+/*
+const myLineAnimation = anime ({
+    targets: '.section-1-line-top',
+    translateY: [0, 100],
+    easing: "linear",
+    duration: 6000, 
+    delay: function(el, i) {
+        return 800*i;}
+})
+
+*/
