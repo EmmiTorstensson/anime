@@ -306,7 +306,8 @@ body {
 
 .font-caslons {
     font-family: caslons-egyptian,sans-serif
-
+ }
+ 
 .section-5 .text-wrapper h2,
 .section-5 .text-wrapper p:last-of-type,
 .section-5 .text-wrapper a {
@@ -403,8 +404,6 @@ body {
 }
 
 .section-1-img-wrapper{
-
-.section-1-img-wrapper {
   height: 100vh;
   background: url("img/school.jpg");
   background-position: center;
