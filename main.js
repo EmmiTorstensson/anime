@@ -49,18 +49,29 @@ function checkForVisibility() {
     s5.play();
   }
 
-  var sectionText = document.querySelectorAll(".section-6-text");
-  var sectionImg = document.querySelectorAll(".imgAni");
+  let sectionText = document.querySelector(".section-6-text");
+  let sectionImg = document.querySelectorAll(".imgAni");
+  let swiperSlide = document.querySelectorAll(".swiper-slide");
 
-  sectionText.forEach(function(section) {
-    if (isElementInViewport(section)) {
-      section.classList.add("sectionVisible");
+  if (isElementInViewport(sectionText)) {
+    sectionText.classList.add("sectionVisible");
+  }
+
+  let delayAdmission = 0;
+  sectionImg.forEach(function(img) {
+    if (isElementInViewport2(img)) {
+      setTimeout(function() {
+        img.classList.add("imgVisible");
+      }, (delayAdmission += 500));
     }
   });
 
-  sectionImg.forEach(function(img) {
-    if (isElementInViewport(img)) {
-      img.classList.add("imgVisible");
+  let delayCarousel = 0;
+  swiperSlide.forEach(function(slide) {
+    if (isElementInViewport2(slide)) {
+      setTimeout(function() {
+        slide.classList.add("slideVisible");
+      }, (delayCarousel += 500));
     }
   });
 }
@@ -68,6 +79,16 @@ function checkForVisibility() {
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
   let middle = rect.top + (rect.bottom - rect.top) / 2;
+
+  return (
+    rect.top >= 0 &&
+    middle <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+function isElementInViewport2(el) {
+  var rect = el.getBoundingClientRect();
+  let middle = rect.top + (rect.bottom - rect.top) / 4;
 
   return (
     rect.top >= 0 &&
