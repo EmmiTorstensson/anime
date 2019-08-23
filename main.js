@@ -1,37 +1,4 @@
 
-//alex
-function checkForVisibility() {
-    var headers = document.querySelectorAll(".delay");
-    headers.forEach(function(header) {
-
-        
-      if (isElementInViewport(header)) {
-       return header.classList.add("delay--enter");
-        
-    }
-       
-    });
-  }
-  
-  function isElementInViewport (el) {
-    var rect = el.getBoundingClientRect();
-  
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
-    );
-  }
-  
-  if (window.addEventListener) {
-    addEventListener('DOMContentLoaded', checkForVisibility, false); 
-    addEventListener('load', checkForVisibility, false);
-    addEventListener('scroll', checkForVisibility, false);
-  }
-
-//alexends
-
 let s4 = anime.timeline({
   easing: "linear",
   duration: 500
@@ -82,6 +49,14 @@ function checkForVisibility() {
   if (isElementInViewport(sectionFive)) {
     s5.play();
   }
+
+  var headers = document.querySelectorAll(".delay");
+  headers.forEach(function(header) {
+    if (isElementInViewport(header)) {
+     return header.classList.add("delay--enter");
+  }
+     
+  });
 
   let sectionText = document.querySelector(".section-6-text");
   let sectionImg = document.querySelectorAll(".imgAni");

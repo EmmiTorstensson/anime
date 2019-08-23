@@ -216,12 +216,9 @@ body {
   padding: 0;
 
   }
-  box-sizing: border-box;
-}
 
 #section-2 .text-wrapper
 {
-    width: %;
     margin: auto;
 }
 
@@ -258,9 +255,7 @@ body {
     font-weight: 400;
     font-size: 3rem;
 }
-.section-2 .text-wrapper p:last-of-type{
-  
-}
+
 .section-3 {
     margin-bottom: 20%;
 }
@@ -325,10 +320,10 @@ height: 85vh;
 }.bg-grey-lightest {
     background-color: #f8f8f8;
 }
-.bg-arts-intro, .bg-home-content-0, .bg-learning-intro, .bg-sport-image-right-1, .bg-sport-image-right-7 {
+.text-wrapper1 {
     background-repeat: no-repeat;
     background-position: bottom;
-    background-image: url(/assets/img/bg-chevrons.svg);
+    background-image: url(./img/bg-chevrons.svg);
 }
 div {
     display: block;
