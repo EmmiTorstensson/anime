@@ -305,9 +305,9 @@ body {
 }
 
 .font-caslons {
-    font-family: caslons-egyptian,sans-serif
- }
- 
+  font-family: caslons-egyptian, sans-serif;
+}
+
 .section-5 .text-wrapper h2,
 .section-5 .text-wrapper p:last-of-type,
 .section-5 .text-wrapper a {
@@ -349,7 +349,6 @@ body {
   font-size: 0.68rem;
   color: #fff;
   text-align: center;
-
 }
 
 .font-lebeaune {
@@ -367,40 +366,40 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-.section-1 h3{
+.section-1 h3 {
   color: #fff;
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 0.5rem;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
 }
 
-.section-1-menu-wrap{
+.section-1-menu-wrap {
   z-index: 3000;
   position: absolute;
   top: 20%;
   right: 10%;
   width: 150px;
 }
-.section-1-menu{
+.section-1-menu {
   width: 35px;
   height: 3px;
   background-color: white;
   margin: 10px 0;
 }
 
-.section-1-menu-text{
+.section-1-menu-text {
   color: #fff;
   text-transform: uppercase;
-  top: 20%; 
+  top: 20%;
   position: absolute;
   z-index: 3000;
   top: 20%;
   right: 26%;
-  font-family: 'Lexend Giga', sans-serif;
+  font-family: "Lexend Giga", sans-serif;
   font-size: 0.8rem;
 }
-.section-1-img-wrapper{
+.section-1-img-wrapper {
   height: 100vh;
   background: url("img/school.jpg");
   background-position: center;
@@ -426,21 +425,21 @@ body {
   z-index: 1000;
   font-size: 5rem;
   letter-spacing: 0.1em;
-
 }
-.section-1-line-top, .section-1-line-bottom{
-    width: 2px;
-    height: 3rem;
-    background-color: #fff;
-    z-index: 1000;
-    margin: 0 auto;
+.section-1-line-top,
+.section-1-line-bottom {
+  width: 2px;
+  height: 3rem;
+  background-color: #fff;
+  z-index: 1000;
+  margin: 0 auto;
 }
 
 footer {
   display: flex;
   flex-direction: column;
   background-color: #162238;
-  padding: 4% 4%;
+  padding: 4% 6%;
 }
 .top-footer {
   padding-bottom: 5%;
@@ -453,20 +452,11 @@ footer {
   justify-content: space-around;
   color: #fff;
 }
-.top-footer{
+.top-footer {
   align-items: flex-start;
 }
-.flex-item h3 {
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-.margin-top{
-  margin-top: 20px !important; 
+.margin-top {
+  margin-top: 20px !important;
 }
 .flex-item p {
   font-size: 0.81rem;
@@ -480,7 +470,7 @@ footer {
 .icon-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   min-width: 10%;
   width: auto;
 }
@@ -489,24 +479,23 @@ footer {
   justify-content: space-around;
   align-items: flex-end;
   text-transform: uppercase;
-  font-size: 0.68rem;
-  
+  font-size: 1rem;
 }
 .bottom-footer img {
   width: 20px;
   height: 20px;
 }
-.links-bottom h3{
+.links-bottom h5 {
   border-left: 1px solid #e6e6e679;
   padding-left: 3rem;
   margin-left: 3rem;
 }
-.links-bottom h3:first-of-type{
+.links-bottom h5:first-of-type {
   border: none;
   padding-left: 0;
 }
-.links-bottom h3:nth-child(2){
-  border:none;
+.links-bottom h5:nth-child(2) {
+  border: none;
   padding-left: 0;
 }
 
@@ -519,11 +508,11 @@ footer {
   padding-bottom: 10px;
   transition: all 0.3s ease;
 }
-.arrow:hover{
+.arrow:hover {
   transform: translateY(-5px);
 }
 
-.section-1-link{
+.section-1-link {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -531,8 +520,8 @@ footer {
   text-align: center;
   bottom: 15%;
   left: 50%;
-  transform: translate(-50%, -50%); 
-  font-family: 'Lexend Giga', sans-serif;
+  transform: translate(-50%, -50%);
+  font-family: "Lexend Giga", sans-serif;
   font-size: 0.8rem;
 }
 
@@ -543,9 +532,18 @@ footer {
   height: 2px;
   background: #fff;
   transition: width 0.3s;
-  }
+}
 
-  .section-1 a:hover:after { 
-    width: 100%; 
-    transition: width .3s;
-  }
+.section-1 a:hover:after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.flex-item h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.75rem !important;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
