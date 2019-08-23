@@ -1,4 +1,3 @@
-
 let s4 = anime.timeline({
   easing: "linear",
   duration: 500
@@ -49,8 +48,7 @@ function checkForVisibility() {
   if (isElementInViewport(sectionFive)) {
     s5.play();
   }
-  
- 
+
   var sectionText = document.querySelectorAll(".section-6-text");
   var sectionImg = document.querySelectorAll(".imgAni");
 
@@ -65,9 +63,6 @@ function checkForVisibility() {
       img.classList.add("imgVisible");
     }
   });
-  
-  
-  
 }
 
 function isElementInViewport(el) {
@@ -89,62 +84,43 @@ if (window.addEventListener) {
 //Slider carousel
 
 var mySwiper = new Swiper(".swiper-container", {
-  //   speed: 400,
-  //   spaceBetween: 100,
   initialSlide: 0,
-  //truewrapper adoptsheight of active slide
   autoHeight: false,
-  // Optional parameters
+
   direction: "horizontal",
-  loop: true,
-  // delay between transitions in ms
+  loop: false,
   autoplay: false,
-  //   autoplayStopOnLast: false, // loop false also
-  // If we need pagination
   pagination: ".swiper-pagination",
-  //   paginationType: "bullets",
-
-  //   // Navigation arrows
-  //   nextButton: ".swiper-button-next",
-  //   prevButton: ".swiper-button-prev",
-
-  // And if we need scrollbar
-  //scrollbar: '.swiper-scrollbar',
-  // "slide", "fade", "cube", "coverflow" or "flip"
   effect: "slide",
-  // Distance between slides in px.
   spaceBetween: 70,
-  //
   slidesPerView: 3,
-  //
   centeredSlides: false,
-  //
   slidesOffsetBefore: 0,
-  //
   grabCursor: true
 });
 
-
-
-/* Emmi JS*/ 
+/* Emmi JS*/
 
 const myAnimation = anime({
-    targets: '.section-1-img',
-    scale: 1.2,
-    duration: 16000,
-    delay: function(el, i) { return i * 250 },    
-    direction: 'alternate',
-    easing: 'linear',
-    loop: true,
-})
+  targets: ".section-1-img",
+  scale: 1.2,
+  duration: 16000,
+  delay: function(el, i) {
+    return i * 250;
+  },
+  direction: "alternate",
+  easing: "linear",
+  loop: true
+});
 
 const myTextAnimation = anime({
-    targets: '.section-1-text-wrapper .section-1-word',
-    translateY: [50,0],
-    translateZ: 0,
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 8000,
-    delay: function(el, i) {
-        return 700*i;}
-})  
+  targets: ".section-1-text-wrapper .section-1-word",
+  translateY: [50, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: "easeOutExpo",
+  duration: 8000,
+  delay: function(el, i) {
+    return 700 * i;
+  }
+});
