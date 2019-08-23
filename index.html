@@ -6,18 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nackademin</title>
 
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Lexend+Giga&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <!-- Header Emmi -->
     <div class="section-1">
-      <div class="section-1-img-wrapper section-1-img"></div>
-      <div class="section-1-text-wrapper">
-        <h1 class="section-1-text">
-          <span class="section-1-word">Winchester</span>
-          <span class="section-1-word">College</span>
-        </h1>
-      </div>
+
+       
+        <div class="section-1-menu-wrap">
+            <div class="section-1-menu"></div>
+            <div class="section-1-menu"></div>
+            <div class="section-1-menu"></div>
+        </div>    
+        
+        <div class="section-1-img-wrapper section-1-img"> </div>
+        <div class="section-1-text-wrapper">       
+                <div class="section-1-line-top"></div>
+                <div class="section-1-text">
+                <h3 class="section-1-word">welcome to</h3>
+                <h1><span class="section-1-word">Winchester</span> <span class="section-1-word">College</span></h1>
+                </div>
+                <div class="section-1-line-bottom"></div>
+            </div>
+            <a href="#" class="section-1-link">explore with us</a>
     </div>
 
     <!-- Header Alex -->
@@ -82,9 +105,103 @@
     </div>
 
     <!-- Header Jennifer -->
-    <div class="section-6"></div>
-    <div class="section-7"></div>
-    <div class="section-8"></div>
+    <div class="section-6">
+      <div class="section-6-text">
+          <div class="top-line"></div>
+        <p class="p-small">Admissions</p>
+        <h2>Supporting your application</h2>
+
+        <p class="p-info">
+          Winchester has its own unique admissions process. We look for boys
+          with enquiring minds and natural intelligence. Our founder’s ethos was
+          to educate such boys, whatever their background, hence our generous
+          bursary provision. Experienced staff assist in every stage of the
+          process, from initial inquiry through to choosing a house, to sitting
+          the entrance exams.
+        </p>
+        <a href="">Reveal more</a>
+        <a href="">Book an open day</a>
+      </div>
+    </div>
+    <div class="section-7">
+      <div class="left7">
+        <div class="left7-text">
+          <h3>
+            Apply for 13+ <br />
+            admission
+          </h3>
+          <p class="p-info">
+            We spend time getting to know each prospective family during the
+            admissions process. It is a unique system, focused on potential, not
+            merely prior attainment. It is based substantially on interview and
+            ensures that by the time a boy starts, he will often have had a
+            number of years to get to know us.
+          </p>
+          <p><a href="">Find out more</a></p>
+        </div>
+        <div class="left7-img">
+          <img class="imgAni" src="./images/crowd2.jpg" alt="crowd2" />
+        </div>
+      </div>
+      <div class="right7">
+        <div class="right7-img">
+          <img class="imgAni" src="./images/wr-dsc1234.jpg" alt="man walking" />
+        </div>
+        <div class="right7-text">
+          <h3>
+            Apply for 16+ <br />
+            admission
+          </h3>
+          <p class="p-info">
+            Each year we welcome a limited number of boys in to the Sixth Form,
+            a choice which is becoming increasingly popular. Boys join to study
+            our Pre-U curriculum and quickly take advantage of extra-curricular
+            activities.
+          </p>
+          <p><a href="">Find out more</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-8">
+      <div class="side-text">
+        <h1>HEAR FROM THE BOYS</h1>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide one">
+            <p class="p-small2">Year 13</p>
+            <p>Ollie</p>
+            <a href="http://">Hear from Ollie</a>
+          </div>
+          <div class="swiper-slide two">
+            <p class="p-small2">Year 13</p>
+            <p>Felipe</p>
+            <a href="http://">Hear from Felipe</a>
+          </div>
+          <div class="swiper-slide three">
+            <p class="p-small2">Year 11</p>
+            <p>Ivar</p>
+            <a href="http://">Hear from Ivar</a>
+          </div>
+          <div class="swiper-slide four">
+            <p class="p-small2">Year 12</p>
+            <p>Oliver</p>
+            <a href="http://">Hear from Oliver</a>
+          </div>
+          <div class="swiper-slide five">
+            <p class="p-small2">Year 11</p>
+            <p>Carson</p>
+            <a href="http://">Hear from Carson</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
 
     <footer>
       <div class="top-footer">
@@ -141,6 +258,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
