@@ -1,3 +1,4 @@
+
 //alex
 function checkForVisibility() {
     var headers = document.querySelectorAll(".delay");
@@ -81,30 +82,47 @@ function checkForVisibility() {
   if (isElementInViewport(sectionFive)) {
     s5.play();
   }
-  
- 
-  var sectionText = document.querySelectorAll(".section-6-text");
-  var sectionImg = document.querySelectorAll(".imgAni");
 
-  sectionText.forEach(function(section) {
-    if (isElementInViewport(section)) {
-      section.classList.add("sectionVisible");
-    }
-  });
+  let sectionText = document.querySelector(".section-6-text");
+  let sectionImg = document.querySelectorAll(".imgAni");
+  let swiperSlide = document.querySelectorAll(".swiper-slide");
 
+  if (isElementInViewport(sectionText)) {
+    sectionText.classList.add("sectionVisible");
+  }
+
+  let delayAdmission = 0;
   sectionImg.forEach(function(img) {
-    if (isElementInViewport(img)) {
-      img.classList.add("imgVisible");
+    if (isElementInViewport2(img)) {
+      setTimeout(function() {
+        img.classList.add("imgVisible");
+      }, (delayAdmission += 500));
     }
   });
-  
-  
-  
+
+  let delayCarousel = 0;
+  swiperSlide.forEach(function(slide) {
+    if (isElementInViewport2(slide)) {
+      setTimeout(function() {
+        slide.classList.add("slideVisible");
+      }, (delayCarousel += 500));
+    }
+  });
 }
 
 function isElementInViewport(el) {
   var rect = el.getBoundingClientRect();
   let middle = rect.top + (rect.bottom - rect.top) / 2;
+
+  return (
+    rect.top >= 0 &&
+    middle <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+function isElementInViewport2(el) {
+  var rect = el.getBoundingClientRect();
+  let middle = rect.top + (rect.bottom - rect.top) / 4;
 
   return (
     rect.top >= 0 &&
@@ -121,44 +139,22 @@ if (window.addEventListener) {
 //Slider carousel
 
 var mySwiper = new Swiper(".swiper-container", {
-  //   speed: 400,
-  //   spaceBetween: 100,
   initialSlide: 0,
-  //truewrapper adoptsheight of active slide
   autoHeight: false,
-  // Optional parameters
+
   direction: "horizontal",
-  loop: true,
-  // delay between transitions in ms
+  loop: false,
   autoplay: false,
-  //   autoplayStopOnLast: false, // loop false also
-  // If we need pagination
   pagination: ".swiper-pagination",
-  //   paginationType: "bullets",
-
-  //   // Navigation arrows
-  //   nextButton: ".swiper-button-next",
-  //   prevButton: ".swiper-button-prev",
-
-  // And if we need scrollbar
-  //scrollbar: '.swiper-scrollbar',
-  // "slide", "fade", "cube", "coverflow" or "flip"
   effect: "slide",
-  // Distance between slides in px.
   spaceBetween: 70,
-  //
   slidesPerView: 3,
-  //
   centeredSlides: false,
-  //
   slidesOffsetBefore: 0,
-  //
   grabCursor: true
 });
 
-
-
-/* Emmi JS*/ 
+/* Emmi JS*/
 
 const myAnimation = anime({
     targets: '.section-1-img',
