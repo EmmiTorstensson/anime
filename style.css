@@ -31,7 +31,7 @@ body {
     padding: 5rem 2rem;
     margin: auto;
   }
-.section-2 .text-wrapper p:first-of-type{
+.section-2 .text-wrapper1 p:first-of-type{
     font-size: 1.06rem;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -39,7 +39,7 @@ body {
     line-height: 1em;
     letter-spacing: 2px;
 }
-.section-2 .text-wrapper h2{
+.section-2 .text-wrapper1 h2{
     color: rgb(0, 0, 0);
     line-height: 1;
     font-weight: 400;
